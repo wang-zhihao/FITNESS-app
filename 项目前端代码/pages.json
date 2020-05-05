@@ -1,0 +1,140 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+
+			}
+		}, {
+			"path": "pages/index/login",
+			"style": {}
+		}, {
+			"path": "pages/index/register",
+			"style": {}
+		}, {
+			"path": "pages/index/forget",
+			"style": {}
+		}, {
+			"path": "pages/main/main",
+			"style": {"enablePullDownRefresh": true}
+		}
+
+		, {
+			"path": "pages/main/community/community",
+			"style": {}
+		}
+
+		, {
+			"path": "pages/main/myself/myself",
+			"style": {}
+		}, {
+			"path": "pages/main/jihua",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/sport",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/xunlian",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/xunlian_info",
+			"style": {}
+		}, {
+			"path": "pages/main/myself/sportrecord",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/run",
+			"style": {
+				"navigationBarTitleText": "跑步"
+			}
+		}, {
+			"path": "pages/main/sport/ride",
+			"style": {
+				"navigationBarTitleText": "骑行"
+			}
+		}, {
+			"path": "pages/main/sport/yoga",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/meditation",
+			"style": {
+
+			}
+		}, {
+			"path": "pages/main/sport/meditation_info",
+			"style": {}
+		}, {
+			"path": "components/mask",
+			"style": {}
+		}, {
+			"path": "pages/main/sport/yoga_info",
+			"style": {
+				"app-plus": {
+					"titleNView":{
+						"type":"transparent"
+					}
+					
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/main/jihua_info",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/main/changeplan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/main/share",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		//"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "FITNESS",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#fffae8",
+		"list": [{
+				"pagePath": "pages/main/main",
+				"iconPath": "static/tabbar/basics.png",
+				"selectedIconPath": "static/tabbar/basics_cur.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/main/jihua",
+				"iconPath": "static/tabbar/component.png",
+				"selectedIconPath": "static/tabbar/component_cur.png",
+				"text": "计划"
+			},
+			{
+				"pagePath": "pages/main/sport/sport",
+				"iconPath": "static/tabbar/plugin.png",
+				"selectedIconPath": "static/tabbar/plugin_cur.png",
+				"text": "运动"
+			},
+			{
+				"pagePath": "pages/main/myself/myself",
+				"iconPath": "static/tabbar/about.png",
+				"selectedIconPath": "static/tabbar/about_cur.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+
+}
